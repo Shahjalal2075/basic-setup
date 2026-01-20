@@ -1,5 +1,8 @@
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import Banner from '../SharedSection/Header/Banner/Banner';
+import HTW from '../SharedSection/HTW/HTW';
+import ApplyHome from '../SharedSection/ApplyHome/ApplyHome';
 
 const Home = () => {
 
@@ -16,7 +19,9 @@ const Home = () => {
 
     return (
         <div className="">
-            <h2 className=' text-center'>Home</h2>
+            <Banner></Banner>
+            <HTW></HTW>
+            <ApplyHome></ApplyHome>
         </div>
     );
 };

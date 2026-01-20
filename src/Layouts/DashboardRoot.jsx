@@ -1,16 +1,14 @@
-import { Outlet } from "react-router-dom";
-import Header from "../Pages/SharedSection/Header/Header";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-const Root = () => {
-
+const DashboardRoot = () => {
     return (
         <div className="bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF] min-h-[100vh]">
             <div className="">
-                <Header></Header>
                 <Outlet></Outlet>
             </div>
         </div>
     );
 };
 
-export default Root;
+export default DashboardRoot;
