@@ -7,6 +7,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import SignIn from "../Pages/SignIn/SignIn";
 import DashboardRoot from "../Layouts/DashboardRoot";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Profile from "../Pages/Profile/Profile";
 
 const Routes = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const Routes = createBrowserRouter([
           {
             path: "/dashboard",
             element: <Dashboard></Dashboard>
+          },
+          {
+            path: "/dashboard/profile",
+            element: <Profile></Profile>
           },
         ]
       }
