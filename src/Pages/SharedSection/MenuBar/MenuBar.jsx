@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Home, ShoppingBag, ListFilter, Users, Bell, User } from 'lucide-react';
+import { Home, ShoppingBag, ListFilter, Users, Bell, User, House, ClipboardClock } from 'lucide-react';
 import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
-    { name: 'Home', icon: Home, index: 0, path: '/dashboard' },
-    { name: 'Filter', icon: ListFilter, index: 2, path: '/dashboard/loan' },
+    { name: 'Home', icon: House, index: 0, path: '/dashboard' },
+    { name: 'Loan', icon: ClipboardClock, index: 2, path: '/dashboard/loan' },
     { name: 'Users', icon: User, index: 3, path: '/dashboard/profile' },
 ];
 
 const MenuBar = () => {
     const location = useLocation();
-    
+
     const currentPath = location.pathname;
 
     return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -33,13 +34,13 @@ const Banner = () => {
 
         {/* buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full">
-          <button className="px-8 w-full py-3 rounded-lg bg-[#1A237E] text-white font-semibold hover:bg-[#0f1985] transition">
+          <Link to={'/signin'} className="px-8 w-full py-3 rounded-lg bg-[#1A237E] text-white font-semibold hover:bg-[#0f1985] transition">
             লগইন
-          </button>
+          </Link>
 
-          <button className="w-full px-8 py-3 rounded-lg border border-[#1A237E] text-[#1A237E] font-semibold hover:bg-[#1A237E] hover:text-white transition">
+          <Link to={'/signup'} className="w-full px-8 py-3 rounded-lg border border-[#1A237E] text-[#1A237E] font-semibold hover:bg-[#1A237E] hover:text-white transition">
             এখনই আবেদন করুন
-          </button>
+          </Link>
         </div>
       </div>
     </section>

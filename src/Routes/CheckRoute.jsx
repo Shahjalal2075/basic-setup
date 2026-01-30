@@ -16,7 +16,7 @@ const CheckRoute = ({ children }) => {
     if (!user)
         return children;
 
-    return <Navigate to={"/"}></Navigate>
+    return <Navigate to={"/dashboard"}></Navigate>
 };
 
 export default CheckRoute;

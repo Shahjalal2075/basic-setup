@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ApplyHome = () => {
   return (
@@ -22,9 +23,9 @@ const ApplyHome = () => {
           <div className="flex flex-col">
             
             {/* Button */}
-            <button className="px-6 py-3 rounded-lg bg-[#1E2A8A] text-white font-semibold hover:bg-[#16206B] transition">
+            <Link to={'/signup'} className="px-6 py-3 rounded-lg bg-[#1E2A8A] text-white font-semibold hover:bg-[#16206B] transition">
               এখনই আবেদন করুন
-            </button>
+            </Link>
 
             {/* Stats */}
             <div className="flex items-center gap-6 text-sm text-gray-700 w-full justify-center mt-6">
